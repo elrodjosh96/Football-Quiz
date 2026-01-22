@@ -136,7 +136,7 @@
 
 @media (max-width: 600px) {
     .container {
-        width: 92%;
+        width: 80%;
         margin-top: 30px;
         padding: 22px 16px;
         gap: 13px;
@@ -170,7 +170,7 @@
 
 @media (max-width: 480px) {
     .container {
-        width: 95%;
+        width: 75%;
         margin-top: 20px;
         padding: 20px 15px;
         gap: 12px;
