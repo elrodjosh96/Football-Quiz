@@ -31,7 +31,7 @@ export const Quiz = () => {
 
     const fetchLeaderboard = async () => {
         try {
-            const response = await fetch('http://localhost:3001/api/leaderboard');
+            const response = await fetch('https://football-quiz-9z5o.onrender.com/api/leaderboard');
             const data = await response.json();
             setLeaderboard(data);
         } catch (error) {
@@ -47,7 +47,7 @@ export const Quiz = () => {
 
         setIsLoading(true);
         try {
-            const response = await fetch('http://localhost:3001/api/results', {
+            const response = await fetch('https://football-quiz-9z5o.onrender.com/api/results', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ export const Quiz = () => {
             }
         } catch (error) {
             console.error('Error submitting score:', error);
-            alert('Failed to submit score. Make sure the backend server is running on port 3001');
+            alert('Failed to submit score. Please try again.');
         } finally {
             setIsLoading(false);
         }
